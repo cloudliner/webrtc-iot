@@ -63,7 +63,7 @@ def destroy():
 if __name__ == '__main__':
     setup()
     try:
-            main()
+        main()
     # when 'Ctrl+C' is pressed,child program destroy() will be executed.
     except KeyboardInterrupt:
         destroy()
