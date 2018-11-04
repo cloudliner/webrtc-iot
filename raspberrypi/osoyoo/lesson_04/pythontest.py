@@ -58,7 +58,7 @@ def destroy():
     GPIO.output(LEDPIN,GPIO.LOW)
     #release resource
     GPIO.cleanup()
-#
+
 # if run this script directly ,do:
 if __name__ == '__main__':
     setup()
@@ -67,4 +67,3 @@ if __name__ == '__main__':
     #when 'Ctrl+C' is pressed,child program destroy() will be executed.
     except KeyboardInterrupt:
         destroy()
-
